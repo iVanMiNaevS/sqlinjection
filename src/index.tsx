@@ -9,6 +9,7 @@ import { PostsPage } from "./pages/posts/PostsPage";
 import { Root } from "./Root";
 import { CreatePost } from "./pages/createPost/CreatePost";
 import { MyPosts } from "./pages/myPosts/MyPosts";
+import { PostsByUser } from "./pages/PostsByUser/PostsByUser";
 const root = ReactDOM.createRoot(
 	document.getElementById("root") as HTMLElement
 );
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
 			{
 				path: "/my-posts",
 				element: <MyPosts />,
+			},
+			{
+				path: "/posts-by-user",
+				element: <PostsByUser />,
 			},
 		],
 	},

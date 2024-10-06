@@ -17,8 +17,13 @@ header .buttons {
 }
 header .buttons button {
 	font-size: 18px;
+	padding: 10px;
+}
+header .buttons button.header__button {
+	padding: 10px;
 }
 header a {
+	display: block;
 	color: inherit;
 	text-decoration: none;
 }

@@ -44,7 +44,7 @@ const FormReg: FC<Props> = ({ titleText, url, func }) => {
 
 							// }
 							localStorage.setItem("userId", response.id);
-							navigate("/posts");
+							navigate({ pathname: "/posts", search: "?protected=false" });
 						}
 					} catch (err) {
 						console.log(err);

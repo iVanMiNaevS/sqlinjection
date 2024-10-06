@@ -1,0 +1,61 @@
+.postCard {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+	box-shadow: 0px 0px 10px grey;
+	border-radius: 10px;
+	padding: 20px;
+}
+.postCard p {
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* Number of lines */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.postCard button {
+	width: fit-content;
+	margin-left: auto;
+	position: relative;
+}
+.postCard button::before {
+	content: "";
+	background-image: url(/public/img/person-svgrepo-com.svg);
+	width: 30px;
+	display: block;
+	left: -40px;
+	top: 5px;
+	background-size: cover;
+	height: 30px;
+	position: absolute;
+}
+.postCard-btns {
+	display: flex;
+}
+.actionBtns {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+.actionBtns .status {
+	font-size: 18px;
+	font-weight: 600;
+}
+.actionBtns .delete {
+	background: rgb(255, 0, 0);
+	border: 2px solid red;
+	transition: 0.3s;
+}
+.actionBtns .delete:hover {
+	background: transparent;
+}
+.postCard button.action-btn {
+	font-size: 18px;
+	font-weight: 600;
+	width: fit-content;
+	margin-left: auto;
+}
+.postCard button.action-btn::before {
+	content: none;
+}
